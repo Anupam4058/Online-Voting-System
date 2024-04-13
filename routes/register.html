@@ -7,35 +7,11 @@
 
 <body>
     <style>
-        #address {
-            width: 30%;
-        }
-
-        #imagepart {
-            border: 2px solid black;
-            border-radius: 5px;
-            padding: 10px;
-            width: 30%;
-            text-align: center;
-        }
-
-        #role {
-            border: 2px solid black;
-            border-radius: 5px;
-            padding: 10px;
-            width: 30%;
-            text-align: center;
-        }
-
-        #role select {
-            border-radius: 5px;
-            padding: 10px;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-        }
-        #bodysection{
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    #bodysection{
     margin: auto;
     padding: 10px;
     border: none;
@@ -49,11 +25,24 @@
     align-items: center;
     justify-content: center;
 }
+input{
+    border:none;
+    border-bottom: 1px solid #9f01ea;
+    border-radius: 0px;
+    height: 27px;
+    width: 153px;
+}
+input:focus{
+    outline: none;
+}
+#bodysection{
+    margin-bottom: 23vh;
+    margin-top: 5vh;
+}
     </style>
     <div id="headersection">
-        <h1>Online Voting System</h1>
+        <center><h1>Online Voting System</h1></center>
     </div>
-    <hr>
     <div id="bodysection">
         <h2>Registration</h2>
         <form action="../api/register.php" method="post" enctype="multipart/form-data">
