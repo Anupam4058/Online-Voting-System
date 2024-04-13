@@ -4,57 +4,80 @@
     <title>Registration</title>
     <link rel="stylesheet" href="../CSS/stylesheet.css">
 </head>
-
-<body>
     <style>
-        #address {
-            width: 30%;
-        }
-
-        #imagepart {
-            border: 2px solid black;
-            border-radius: 5px;
-            padding: 10px;
-            width: 30%;
-            text-align: center;
-        }
-
-        #role {
-            border: 2px solid black;
-            border-radius: 5px;
-            padding: 10px;
-            width: 30%;
-            text-align: center;
-        }
-
-        #role select {
-            border-radius: 5px;
-            padding: 10px;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-        }
-        #bodysection{
-    margin: auto;
-    padding: 10px;
-    border: none;
-    background-color: white;
-    height: 55vh;
-    width: 20vw;
-    border-radius: 10px;
-}
-.form{
+    a{
+        text-decoration: none;
+        color: white;
+    }
+.form-reg{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+input{
+    border:none;
+    border-bottom: 1px solid #9f01ea;
+    border-radius: 0px;
+    height: 27px;
+    width: 153px;
+}
+input:focus{
+    outline: none;
+}
+#bodysection-reg{
+    margin: auto;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    height: 65vh;
+    width: 20vw;
+    border-radius: 10px;
+    margin-top: 5vh;
+}
+button{
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    height:43px;
+    width:154px;
+    border:none;
+    color:white;
+    border-radius: 5px;
+    font-size: 17px;
+    transition: background-position ease-out 0.4s;
+    margin-bottom: 10px;
+}
+button:hover{
+    background-position: 154px;
+    cursor: pointer;
+}
+#uploader{
+    border:none;
+    color:transparent;
+    margin-left: 63px;
+    background-color: white;
+}
+#uploader::file-selector-button{
+    background: #9f01ea;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    height: 3vh;
+    width: 6vw;
+    transition: 0.2s ease;
+}
+#uploader::file-selector-button:hover{
+    background: #56d8e4;
+    color: black;
+    cursor: pointer;
+}
     </style>
+    
+<body>
     <div id="headersection">
-        <h1>Online Voting System</h1>
+        <center><h1 style="font-size: 50px;color: white;">Online Voting System</h1></center>
     </div>
-    <hr>
-    <div id="bodysection">
+    <div id="bodysection-reg">
+        <center>
+        <div id = "form-reg">
         <h2>Registration</h2>
         <form action="../api/register.php" method="post" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="Enter name">
@@ -64,26 +87,24 @@
             <input type="text" name="address" placeholder="Address"><br><br>
             <center>
                 <div id="imagepart">
-                    Upload imagae: <input type="file" name="photo">
+                <input type="file" name="photo" id = "uploader">
                 </div>
                 <br>
                 <div id="role">
 
-                    Select your role: <select name="role">
-                        <option value="1">Voter</option>
-                        <option value="2">Group</option>
+                    <select name="role">
+                        <option value="1">Select option</option>
+                        <option value="2">Voter</option>
+                        <option value="3">Group</option>
                     </select>
                 </div>
             </center>
             <br>
-            <button style=" padding: 5px;
-                            border-radius: 5px;
-                            background-color: blue;
-                            color: white;
-                            font-size: 15px;">Register</button><br><br>
+            <button>Register</button>
             <button><a href="../index.html">Login</a></button>
         </form>
     </div>
+</center>
+    </div>
 </body>
-
 </html>
