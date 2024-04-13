@@ -4,20 +4,6 @@ body{
 #headersection{
     padding: 5px;
 }
-button{
-    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
-    height:43px;
-    width:154px;
-    border:none;
-    color:white;
-    border-radius: 5px;
-    font-size: 17px;
-    transition: background-position ease-out 0.4s;
-}
-button:hover{
-    background-position: 153px;
-    cursor: pointer;
-}
 
 #dropbox{
     display: flex;
