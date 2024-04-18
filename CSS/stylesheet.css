@@ -1,5 +1,5 @@
 body{
-        background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
 }
 #headersection{
     padding: 5px;
@@ -12,4 +12,19 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+#loginbutton{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+}
+#bodysection{
+    margin: auto;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    height: 81vh;
+    width: 63vw;
+    
+}
