@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,75 +10,84 @@
 
 <body>
     <div id="headersection">
-        <h1>Online Voting System</h1>
+        <center>
+            <h1 style="color: white;">Online Voting System</h1>
+        </center>
     </div>
     <div id="bodysection">
-        <form action="#">
-            <div class="input">
-            <input type="number" name="Mobile" placeholder="Enter Mobile"><br><br>
-            <input type="password" name="password" placeholder="Enter password">
+        <div class="form">
+            <center>
+                <form action="api/login.php" method="post">
+                    <h2>Login</h2>
+
+                    <input type="number" name="Mobile" placeholder="Enter Mobile"><br><br>
+                    <input type="password" name="password" placeholder="Enter password"><br><br>
+                    <select id="dropbox" name="role">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select><br><br>
+                    <button id="loginbutton">Login</button><br><br>
+                    New user ?</button><a href="routes/register.html">Register here</a></button>
+                </form>
+            </center>
         </div>
-            <br><br>
-            <select id="dropbox" name="role">
-                <option value="1">Voter</option>
-                <option value="2">Group</option>
-            </select><br><br>
-            <button id="loginbutton">Login</button><br><br>
-            New user ?<a href="routes/register.html">Register here</a>
-        </form>
-    </div>
-    <button id="loginbutton">Login</button><br><br>
-    New user?<br><br>
-    <button><a href="routes/register.html">Register here</a></button>
     </div>
 </body>
+
 </html>
 <style>
-    a{
+    a {
         text-decoration: none;
-        color: white;
+        color: blue;
     }
-#bodysection{
-    margin: auto;
-    padding: 10px;
-    border: none;
-    background-color: white;
-    height: 55vh;
-    width: 20vw;
-    border-radius: 10px;
-}
-.form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-input{
-    border:none;
-    border-bottom: 1px solid #9f01ea;
-    border-radius: 0px;
-    height: 27px;
-    width: 153px;
-}
-input:focus{
-    outline: none;
-}
-#bodysection{
-    margin-bottom: 23vh;
-    margin-top: 5vh;
-}
-button{
-    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
-    height:43px;
-    width:154px;
-    border:none;
-    color:white;
-    border-radius: 5px;
-    font-size: 17px;
-    transition: background-position ease-out 0.4s;
-    margin-bottom: 1px;
-}
-button:hover{
-    background-position: 153px;
-    cursor: pointer;
-}
+
+    #bodysection {
+        margin: auto;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        height: 55vh;
+        width: 20vw;
+        border-radius: 10px;
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid #9f01ea;
+        border-radius: 0px;
+        height: 27px;
+        width: 153px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    #bodysection {
+        margin-bottom: 23vh;
+        margin-top: 5vh;
+    }
+
+    button {
+        background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+        height: 43px;
+        width: 154px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 17px;
+        transition: background-position ease-out 0.4s;
+        margin-bottom: 1px;
+    }
+
+    button:hover {
+        background-position: 153px;
+        cursor: pointer;
+    }
 </style>

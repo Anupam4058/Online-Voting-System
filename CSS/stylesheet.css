@@ -9,7 +9,8 @@ body{
     display: flex;
     padding: 10px;
     border-radius: 7px;
-    width:15%;
+    align-items: center;
+    justify-content: center;
 }
 #loginbutton{
     padding: 5px;
